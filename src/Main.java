@@ -10,5 +10,6 @@ public class Main{
         );
 
         t1.complete();
+        t1.displayTask();
 }
 }
