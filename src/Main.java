@@ -1,15 +1,17 @@
 import model.Task;
+import model.Habit;
 
 public class Main{
     public static void main(String[] args){
-        Task t1 = new Task(
+        Habit h1 = new Habit(
             "Solve DSA",
             1,
             "Pending",
+            4,
             "Solve 2 sliding window problems"
         );
 
-        t1.complete();
-        t1.displayTask();
+        h1.complete();
+        h1.displayHabit();
 }
 }
