@@ -27,5 +27,6 @@ public class Habit{
         System.out.println("Priority: "+priority);
         System.out.println("Streak: "+streak);
         System.out.println("Description: "+description);
+        System.out.println();
     }
 }

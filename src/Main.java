@@ -1,13 +1,12 @@
 import model.Task;
+import Service.plannerservice;
 
 import java.util.ArrayList;
-
 import model.Habit;
 
 public class Main{
     public static void main(String[] args){
-        ArrayList<Task> tasks = new ArrayList<>();
-        ArrayList<Habit> habits = new ArrayList<>();
+        plannerservice service = new plannerservice();
         Habit h1 = new Habit(
             "Solve DSA",
             1,
@@ -16,8 +15,7 @@ public class Main{
             "Solve 2 sliding window problems"
         );
 
-        habits.add(h1);
-        h1.complete();
-        h1.displayHabit();
+        service.addHabit(h1);
+        service.displayAllHabits();
 }
 }
